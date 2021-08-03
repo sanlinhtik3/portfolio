@@ -1,0 +1,833 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" class="lightMode" title="light" href="assets/themes/dark.css" disabled>
+    <link rel="stylesheet" class="darkMode" title="dark" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.min.css">
+    <link rel="stylesheet" href="node_modules/pagepiling-js-version-kostyast/dist/jquery.pagepiling.min.css">
+    <link rel="stylesheet" href="assets/css/mode.css">
+    <style>
+        @font-face {
+            font-family: mM;
+            font-weight: auto;
+            src: url("assets/fonts/montserrat/Montserrat-ExtraBold.ttf");
+        }
+        @font-face {
+            font-family: montserrat;
+            font-weight: auto;
+            src: url("assets/fonts/montserrat/Montserrat-Regular.ttf");
+        }
+    </style>
+</head>
+<body class="text-white">
+
+<nav class="__nav bg-dark-soft p-3 d-flex position-fixed start-0 top-0 w-100 justify-content-between align-items-center d-block d-lg-none">
+    <div class=" fw-bold">
+        San Lin Htike
+    </div>
+    <div class="line_three_menu sidebarOpen">
+        <div class="line line-i"></div>
+        <div class="line line-ii"></div>
+        <div class="line line-iii"></div>
+    </div>
+</nav>
+
+<header class="header-left sidebar">
+    <div class="position-relative">
+        <div class="hl-top">
+            <div class="hl-logo text-center">
+                <img src="assets/img/san_lin_htike.png" class="w-50 border-light border-2 border rounded-circle" alt="">
+            </div>
+            <div class="text-center mt-3">
+                <h6 class=" fw-bold text-uppercase" style="letter-spacing: 5px;">San Lin Htike</h6>
+            </div>
+        </div>
+        <div id="myMenu" class="list-group my-5">
+            <a data-menuanchor="home" class="list-group-item bg-transparent small active" href="#home"><i class="fas fa-home fa-fw me-2"></i>Home</a>
+            <a data-menuanchor="about_me" class="list-group-item bg-transparent small" href="#about_me"><i class="fas fa-info fa-fw me-2"></i>About Me</a>
+            <a data-menuanchor="services" class="list-group-item bg-transparent small" href="#services"><i class="fas fa-server fa-fw me-2"></i>Services</a>
+            <a data-menuanchor="portfolio" class="list-group-item bg-transparent small" href="#portfolio"><i class="fas fa-blog fa-fw me-2"></i>Portfolio</a>
+            <a data-menuanchor="blog" class="list-group-item bg-transparent small" href="#blog"><i class="fas fa-bookmark fa-fw me-2"></i>Blog</a>
+            <a data-menuanchor="contact_me" class="list-group-item bg-transparent small" href="#contact_me"><i class="fas fa-map-marked-alt fa-fw me-2"></i>Contact Me</a>
+        </div>
+    </div>
+    <div class="position-absolute bottom-0 w-100 start-0">
+        <div class="d-flex justify-content-center align-items-center">
+            <div class="m-2">
+                <i class="fab fa-facebook-f "></i>
+            </div>
+            <div class="m-2">
+                <i class="fab fa-twitter "></i>
+            </div>
+            <div class="m-2">
+                <i class="fab fa-instagram "></i>
+            </div>
+            <div class="m-2">
+                <i class="fab fa-github "></i>
+            </div>
+        </div>
+    </div>
+</header>
+<div class="_backdrop fade"></div>
+<div class="mode position-fixed">
+    <div class="">
+        <div class="form-check form-switch">
+            <input class="form-check-input" type="checkbox" id="ab">
+        </div>
+    </div>
+</div>
+
+<main class="main-left" id="pagepiling">
+    <section id="home" class="section pp-scrollable">
+        <div class="home-banner pt-5 pt-lg-0">
+            <div class="container-fluid">
+                <div class="row d-flex justify-content-evenly align-items-center pt-5 pt-lg-0 px-xl-5 min-vh-100 bg-dark">
+                    <div class="col-12 col-lg-5">
+                        <div class="headline">
+                            <h6 class="mb-1 mb-lg-3 fw-bold">Hello, I am</h6>
+                            <h1 class="mb-3">San Lin Htike</h1>
+                            <p class="mb-3 fw-bold">I am passionate Programming</p>
+                            <p class="mb-3 small text-white-50">
+                                I design and develop services for customers of all sizes, specializing in creating stylish, modern websites, web services and online stores.
+                            </p>
+                            <div class="">
+                                <button class="btn btn-primary __btn-theme">Download CV</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-11 col-lg-6">
+                        <div class="headline">
+                            <img src="assets/img/san_lin_htike.png" class="img-fluid" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="about_me" class="section pp-scrollable">
+        <div class="home-banner pt-5 pt-lg-0">
+            <div class="container-fluid">
+                <div class="row justify-content-between align-items-center bg-dark border-bottom border-light px-xl-5 py-5 min-vh-100">
+                    <div class="col-lg-6">
+                        <div class="mb-3 mb-lg-1 text-center text-lg-start">
+                            <img src="assets/img/about-me.png" class="img-fluid" alt="">
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="_title mb-4">
+                            <h3 class="fw-light">About Me</h3>
+                        </div>
+                        <div class="about-text mb-4">
+                            <h3 class="mb-4 fw-bold">
+                                I'm a Freelancer Front-end Developer with over 3 years of experience.
+                            </h3>
+                            <p class="text-white-50 fs-small">
+                                Ubuntu Advantage is the professional support package from the experts at Canonical. Get 24x7 support with access to engineers with first-hand experience of your issues. It includes Landscape, the systems management tool, for monitoring, managing, patching, and compliance reporting on all your Ubuntu desktops.
+                                Learn more about Ubuntu for enterprises ›
+                            </p>
+                        </div>
+                        <div class="row mb-3">
+                            <div class="col-auto">
+                                <div class="d-flex justify-content-start align-items-center">
+                                    <div class="fs-1 me-2 __fw-bold">5K</div>
+                                    <div class="text-white-50 fs-small">
+                                        Project <br>
+                                        Completed
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-auto">
+                                <div class="d-flex justify-content-start align-items-center">
+                                    <div class="fs-1 me-2 __fw-bold">3K</div>
+                                    <div class="text-white-50 fs-small">
+                                        Satisfied <br>
+                                        Clients
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="">
+                            <a class="btn btn-primary __btn-theme me-3" href="#">Content Me</a>
+                            <a class="btn btn-primary __btn-theme" href="#">Protfolio</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="row justify-content-between align-items-center bg-dark border-bottom px-xl-5 border-light py-5">
+                    <div class="col-lg-12">
+                        <div class="mb-5">
+                            <div class="_title">
+                                <h3 class="fw-lighter  text-uppercase">Education & Skills</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-5">
+                        <div class="mb-4">
+                            <div class="card p-3 bg-dark-soft mb-1">
+                                <div class="">
+                                    <span class="badge bg-success mb-2">2010-2020</span>
+                                    <div class="">
+                                        <p class="mb-1 fw-bold ">Graphic Designer</p>
+                                        <p class="text-white-50 fs-small">Internation Design Institute</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card p-3 bg-dark-soft mb-1">
+                                <div class="">
+                                    <span class="badge bg-success mb-2">2010-2020</span>
+                                    <div class="">
+                                        <p class="mb-1 fw-bold ">Graphic Designer</p>
+                                        <p class="text-white-50 fs-small">Internation Design Institute</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card p-3 bg-dark-soft mb-1">
+                                <div class="">
+                                    <span class="badge bg-success mb-2">2010-2020</span>
+                                    <div class="">
+                                        <p class="mb-1 fw-bold ">Graphic Designer</p>
+                                        <p class="text-white-50 fs-small">Internation Design Institute</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-7">
+                        <div class="mb-4">
+                            <h3 class="mb-4  fw-bold">My Skills</h3>
+                            <p class="text-white-50 fs-small mb-5">
+                                I'm a Freelancer Front-end Developer with over 3 years of experience. I code and create web elements for amazing people around the world. I like work with new people. New people new Experiences.
+                            </p>
+                            <div class="">
+                                <div class="mb-3">
+                                    <p class=" fs-small mb-2">HTML</p>
+                                    <div class="progress" style="height: 10px;">
+                                        <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%</div>
+                                    </div>
+                                </div>
+                                <div class="mb-3">
+                                    <p class=" fs-small mb-2">JavaScript</p>
+                                    <div class="progress" style="height: 10px;">
+                                        <div class="progress-bar" role="progressbar" style="width: 50%;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">50%</div>
+                                    </div>
+                                </div>
+                                <div class="mb-3">
+                                    <p class=" fs-small mb-2">PHP</p>
+                                    <div class="progress" style="height: 10px;">
+                                        <div class="progress-bar" role="progressbar" style="width: 50%;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">50%</div>
+                                    </div>
+                                </div>
+                                <div class="mb-3">
+                                    <p class=" fs-small mb-2">Laravel</p>
+                                    <div class="progress" style="height: 10px;">
+                                        <div class="progress-bar" role="progressbar" style="width: 50%;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">50%</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row justify-content-between align-items-center bg-dark border-bottom px-xl-5 border-light py-5">
+                    <div class="col-12">
+                        <div class="_title">
+                            <div class="mb-5">
+                                <h3 class="fw-lighter  text-uppercase">EXPERIENCE.</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="mb-4">
+                            <div class="card p-3 bg-dark-soft mb-1">
+                                <div class="row">
+                                    <div class="col-2">
+                                        <img src="assets/img/a1.png" class="img-fluid" alt="">
+                                    </div>
+                                    <div class="col-10">
+                                        <div class="d-flex justify-content-between align-items-start">
+                                            <div class="">
+                                                <h5 class=" fw-bold">Front-end Developer</h5>
+                                                <p class="text-white-50 fs-small">WeLav | Remote | Jan 2020-Present</p>
+                                            </div>
+                                            <div class="">
+                                                <span class="badge bg-success p-2">FULL TIME</span>
+                                            </div>
+                                        </div>
+                                        <p class="text-white-50 fs-small">
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card p-3 bg-dark-soft mb-1">
+                                <div class="row">
+                                    <div class="col-2">
+                                        <img src="assets/img/a1.png" class="img-fluid" alt="">
+                                    </div>
+                                    <div class="col-10">
+                                        <div class="d-flex justify-content-between align-items-start">
+                                            <div class="">
+                                                <h5 class=" fw-bold">Front-end Developer</h5>
+                                                <p class="text-white-50 fs-small">WeLav | Remote | Jan 2020-Present</p>
+                                            </div>
+                                            <div class="">
+                                                <span class="badge bg-success p-2">FULL TIME</span>
+                                            </div>
+                                        </div>
+                                        <p class="text-white-50 fs-small">
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card p-3 bg-dark-soft mb-1">
+                                <div class="row">
+                                    <div class="col-2">
+                                        <img src="assets/img/a1.png" class="img-fluid" alt="">
+                                    </div>
+                                    <div class="col-10">
+                                        <div class="d-flex justify-content-between align-items-start">
+                                            <div class="">
+                                                <h5 class=" fw-bold">Front-end Developer</h5>
+                                                <p class="text-white-50 fs-small">WeLav | Remote | Jan 2020-Present</p>
+                                            </div>
+                                            <div class="">
+                                                <span class="badge bg-success p-2">FULL TIME</span>
+                                            </div>
+                                        </div>
+                                        <p class="text-white-50 fs-small">
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="services" class="section pp-scrollable">
+        <div class="home-banner pt-5 pt-lg-0">
+            <div class="container-fluid">
+                <div class="row bg-dark border-bottom border-light px-xl-5 py-5 min-vh-100">
+                    <div class="col-12">
+                        <div class="mb-5">
+                            <div class="_title">
+                                <h3 class="fw-lighter  text-uppercase">services</h3>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="card bg-dark-soft mb-3 media">
+                            <div class="card-body p-4 py-lg-5">
+                                <div class="d-flex justify-content-start align-items-start">
+                                    <div class="me-3">
+                                        <i class="fas fa-mobile fs-1 fa-fw "></i>
+                                    </div>
+                                    <div class="">
+                                        <h5 class=" fw-bold">Web Design</h5>
+                                        <p class="text-white-50 fs-small mb-0">
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="card bg-dark-soft mb-3 media">
+                            <div class="card-body p-4 py-lg-5">
+                                <div class="d-flex justify-content-start align-items-start">
+                                    <div class="me-3">
+                                        <i class="fas fa-mobile fs-1 fa-fw "></i>
+                                    </div>
+                                    <div class="">
+                                        <h5 class=" fw-bold">Web Design</h5>
+                                        <p class="text-white-50 fs-small mb-0">
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="card bg-dark-soft mb-3 media">
+                            <div class="card-body p-4 py-lg-5">
+                                <div class="d-flex justify-content-start align-items-start">
+                                    <div class="me-3">
+                                        <i class="fas fa-mobile fs-1 fa-fw "></i>
+                                    </div>
+                                    <div class="">
+                                        <h5 class=" fw-bold">Web Design</h5>
+                                        <p class="text-white-50 fs-small mb-0">
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="card bg-dark-soft mb-3 media">
+                            <div class="card-body p-4 py-lg-5">
+                                <div class="d-flex justify-content-start align-items-start">
+                                    <div class="me-3">
+                                        <i class="fas fa-mobile fs-1 fa-fw "></i>
+                                    </div>
+                                    <div class="">
+                                        <h5 class=" fw-bold">Web Design</h5>
+                                        <p class="text-white-50 fs-small mb-0">
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="card bg-dark-soft mb-3 media">
+                            <div class="card-body p-4 py-lg-5">
+                                <div class="d-flex justify-content-start align-items-start">
+                                    <div class="me-3">
+                                        <i class="fas fa-mobile fs-1 fa-fw "></i>
+                                    </div>
+                                    <div class="">
+                                        <h5 class=" fw-bold">Web Design</h5>
+                                        <p class="text-white-50 fs-small mb-0">
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="card bg-dark-soft mb-3 media">
+                            <div class="card-body p-4 py-lg-5">
+                                <div class="d-flex justify-content-start align-items-start">
+                                    <div class="me-3">
+                                        <i class="fas fa-mobile fs-1 fa-fw "></i>
+                                    </div>
+                                    <div class="">
+                                        <h5 class=" fw-bold">Web Design</h5>
+                                        <p class="text-white-50 fs-small mb-0">
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="portfolio" class="section pp-scrollable">
+        <div class="home-banner pt-5 pt-lg-0">
+            <div class="container-fluid">
+                <div class="row justify-content-between align-items-start bg-dark border-bottom border-light px-xl-5 py-5 min-vh-100">
+                    <div class="col-12">
+                        <div class="mb-5">
+                            <div class="_title">
+                                <h3 class="fw-lighter  text-uppercase">MY PORTFOLIO</h3>
+                            </div>
+                        </div>
+                        <div id="filters" class="mb-3 button-group">
+                            <button class="button btn btn-outline-primary active" data-filter="*">All</button>
+                            <button class="button btn btn-outline-primary" data-filter=".metal, ium">metal</button>
+                            <button class="button btn btn-outline-primary" data-filter=".transition, .alkali, .alkaline-earth">transition</button>
+                            <button class="button btn btn-outline-primary" data-filter=":not(.transition)">not transition</button>
+                            <button class="button btn btn-outline-primary" data-filter=".metal:not(.transition)">metal but not transition</button>
+                        </div>
+                        <div class="row row-cols-1 row-cols-md-3 row-cols-lg-4 grid">
+                            <div class="col mb-4 element-item metal " data-category="transition">
+                                <div class="card bg-dark-soft border h-100">
+                                    <img src="assets/img/portfolio/portfolio-1.jpg" class="card-img-top" alt="">
+                                    <div class="card-body">
+                                        <h5 class="card-title  fw-bold">Card Title</h5>
+                                        <p class="card-text text-white-50 small">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col mb-4 element-item metalloid " data-category="metalloid">
+                                <div class="card bg-dark-soft border h-100">
+                                    <img src="assets/img/portfolio/portfolio-2.jpg" class="card-img-top" alt="">
+                                    <div class="card-body">
+                                        <h5 class="card-title  fw-bold">Card Title</h5>
+                                        <p class="card-text text-white-50 small">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col mb-4 element-item metal post-transition " data-category="post-transition">
+                                <div class="card bg-dark-soft border h-100">
+                                    <img src="assets/img/portfolio/portfolio-3.jpg" class="card-img-top" alt="">
+                                    <div class="card-body">
+                                        <h5 class="card-title  fw-bold">Card Title</h5>
+                                        <p class="card-text text-white-50 small">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col mb-4 element-item metal post-transition " data-category="post-transition">
+                                <div class="card bg-dark-soft border h-100">
+                                    <img src="assets/img/portfolio/portfolio-4.jpg" class="card-img-top" alt="">
+                                    <div class="card-body">
+                                        <h5 class="card-title  fw-bold">Card Title</h5>
+                                        <p class="card-text text-white-50 small">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col mb-4 element-item metal transition " data-category="transition">
+                                <div class="card bg-dark-soft border h-100">
+                                    <img src="assets/img/portfolio/portfolio-5.jpg" class="card-img-top" alt="">
+                                    <div class="card-body">
+                                        <h5 class="card-title  fw-bold">Card Title</h5>
+                                        <p class="card-text text-white-50 small">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col mb-4 element-item metal alkaline-earth " data-category="alkaline-earth">
+                                <div class="card bg-dark-soft border h-100">
+                                    <img src="assets/img/portfolio/portfolio-8.jpg" class="card-img-top" alt="">
+                                    <div class="card-body">
+                                        <h5 class="card-title  fw-bold">Card Title</h5>
+                                        <p class="card-text text-white-50 small">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col mb-4 element-item metal transition " data-category="transition">
+                                <div class="card bg-dark-soft border h-100">
+                                    <img src="assets/img/portfolio/portfolio-9.jpg" class="card-img-top" alt="">
+                                    <div class="card-body">
+                                        <h5 class="card-title  fw-bold">Card Title</h5>
+                                        <p class="card-text text-white-50 small">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="blog" class="section pp-scrollable">
+        <div class="home-banner pt-5 pt-lg-0">
+            <div class="container-fluid">
+                <div class="row position-relative justify-content-between align-items-start bg-dark border-bottom border-light px-xl-5 py-5 min-vh-100">
+                    <!--title-->
+                    <div class="col-lg-12">
+                        <div class="mb-5">
+                            <div class="_title">
+                                <h3 class="fw-lighter  text-uppercase">LATEST BLOG</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 mb-lg-4">
+                        <div class="blog position-relative mb-3">
+                            <div class="blog-img">
+                                <img src="assets/img/blog-1.jpg" class="img-fluid" alt="">
+                            </div>
+                            <div class="blog-info  bg-dark-soft p-3 position-relatives">
+                                <div class="fs-small mb-2 text-white-50">29/FEB/2020 - WEBSITE - 1 COMMENT</div>
+                                <h5 class="fw-bold pe-lg-4 effect-2">Five Solid Evidences Attending Design Is Good For Your Career Development.</h5>
+                                <span class="focus-border"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 mb-lg-4">
+                        <div class="blog position-relative mb-3">
+                            <div class="blog-img">
+                                <img src="assets/img/blog-2.jpg" class="img-fluid" alt="">
+                            </div>
+                            <div class="blog-info  bg-dark-soft p-3 position-relatives">
+                                <div class="fs-small mb-2 text-white-50">29/FEB/2020 - WEBSITE - 1 COMMENT</div>
+                                <h5 class="fw-bold pe-lg-4 effect-2">Ten Mind-Blowing Reasons Why Design Is Using This Technique For Exposure.</h5>
+                                <span class="focus-border"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 mb-lg-4">
+                        <div class="blog position-relative mb-3">
+                            <div class="blog-img">
+                                <img src="assets/img/blog-3.jpg" class="img-fluid" alt="">
+                            </div>
+                            <div class="blog-info  bg-dark-soft p-3 position-relatives">
+                                <div class="fs-small mb-2 text-white-50">29/FEB/2020 - WEBSITE - 1 COMMENT</div>
+                                <h5 class="fw-bold pe-lg-4 effect-2">I Will Tell You The Truth About Design In The Next 60 Seconds.</h5>
+                                <span class="focus-border"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 mb-lg-4">
+                        <div class="blog position-relative mb-3">
+                            <div class="blog-img">
+                                <img src="assets/img/blog-4.jpg" class="img-fluid" alt="">
+                            </div>
+                            <div class="blog-info  bg-dark-soft p-3 position-relatives">
+                                <div class="fs-small mb-2 text-white-50">29/FEB/2020 - WEBSITE - 1 COMMENT</div>
+                                <h5 class="fw-bold pe-lg-4 effect-2">What You Know About Design And What You Don't Know About Design.</h5>
+                                <span class="focus-border"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-12">
+                        <div class="d-flex justify-content-center align-items-center">
+                            <button class="btn btn-primary __btn-theme">More Blogs</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="contact_me" class="section pp-scrollable">
+        <div class="home-banner pt-5 pt-lg-0">
+            <div class="container-fluid">
+                <div class="row justify-content-between align-items-start bg-dark border-bottom border-light px-xl-5 py-5 min-vh-100">
+                    <div class="col-12">
+                        <div class="mb-5">
+                            <div class="_title">
+                                <h3 class="fw-lighter text-uppercase">GET IN TOUCH</h3>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="mb-5">
+                            <div class="card bg-dark-soft">
+                                <div class="card-body">
+                                    <h5 class="card-title fw-bold mb-2">What’s your story? <br> Get in touch</h5>
+                                    <p class="card-text fs-small text-white-50 mb-lg-4">
+                                        Always available for freelancing if the right project comes along, Feel free to contact me.
+                                    </p>
+                                    <div class="d-flex justify-content-start  fs-small">
+                                        <i class="fas fa-map-marked me-2"></i>
+                                        <p class="">
+                                            123 Stree New York City , United States Of America 750065.
+                                        </p>
+                                    </div>
+                                    <div class="d-flex justify-content-start  fs-small">
+                                        <i class="fas fa-envelope me-2"></i>
+                                        <p class="">
+                                            support@domain.com
+                                        </p>
+                                    </div>
+                                    <div class="d-flex justify-content-start  fs-small">
+                                        <i class="fas fa-phone me-2"></i>
+                                        <p class="">
+                                            +044 9696 9696 3636
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-8">
+                        <div class="mb-5">
+                            <div class="card bg-dark-soft">
+                                <div class="card-body">
+                                    <h5 class="card-title  fw-bold mb-3">Say Something</h5>
+                                    <form action="" method="post">
+                                        <div class="row">
+                                            <div class="col-md-6 mb-3">
+                                                <input type="text" class="form-control form-control-sm bg-dark-soft " placeholder="Name" aria-label="First name">
+                                            </div>
+                                            <div class="col-md-6 mb-3">
+                                                <input type="text" class="form-control form-control-sm bg-dark-soft " placeholder="Email" aria-label="Last name">
+                                            </div>
+                                        </div>
+                                        <input type="text" class="form-control form-control-sm mb-3 bg-dark-soft " placeholder="Subject">
+                                        <textarea class="form-control form-control-sm bg-dark-soft  mb-3" name="message" rows="5" placeholder="Your Message"></textarea>
+                                        <button class="btn btn-primary __btn-theme">send message</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-12">
+                        <div class="card">
+                            <div class="bg-secondary" style="height: 50vh"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+
+<script src="node_modules/jquery/dist/jquery.min.js"></script>
+<script src="node_modules/pagepiling-js-version-kostyast/dist/jquery.pagepiling.min.js"></script>
+<script src="node_modules/scrollreveal/dist/scrollreveal.min.js"></script>
+<script src="node_modules/isotope-layout/dist/isotope.pkgd.min.js"></script>
+
+
+<script>
+
+    ScrollReveal({
+        origin: 'top',
+        distance: '30px',
+        duration: 2000,
+        reset: true,
+    }).reveal('.headline',{
+        interval: 200
+    });
+
+    $(document).ready(function() {
+        $('#pagepiling').pagepiling({
+            menu: '#myMenu',
+            direction: 'vertical',
+            verticalCentered: true,
+            sectionsColor: [],
+            anchors: ['home', 'about_me', 'services', 'portfolio', 'blog','contact_me'],
+            scrollingSpeed: 700,
+            easing: 'swing',
+            loopBottom: false,
+            loopTop: false,
+            css3: true,
+            navigation: {
+                'textColor': 'var(--bs-success)',
+                'bulletsColor': 'var(--bs-success)',
+                'position': 'right',
+                'tooltips': ['home', 'about_me', 'services', 'portfolio','blog','contact_me']
+            },
+            normalScrollElements: null,
+            normalScrollElementTouchThreshold: 5,
+            touchSensitivity: 5,
+            keyboardScrolling: true,
+            sectionSelector: '.section',
+            animateAnchor: false,
+
+            //events
+            onLeave: function(index, nextIndex, direction){
+                //after leaving section 2
+                // if(index == 2 && direction =='down'){
+                //     alert("Going to section 3!");
+                // }
+                //
+                // else if(index == 2 && direction == 'up'){
+                //     alert("Going to section 1!");
+                // }
+            },
+
+            afterLoad: function(anchorLink, index){
+                //using index
+                // if(index == 3){
+                //     // document.querySelector(".ohp").classList.add("bg-danger")
+                //     // alert("Section 3 ended loading");
+                // }else{
+                //     // document.querySelector(".ohp").classList.remove("bg-danger")
+                // }
+
+                //using anchorLink
+                // if(anchorLink == 'secondPage'){
+                //     alert("Section 2 ended loading");
+                // }
+            },
+            afterRender: function(){},
+        });
+    });
+
+    // init Isotope
+    var $grid = $('.grid').isotope({
+        itemSelector: '.element-item',
+        layoutMode: 'fitRows',
+        getSortData: {
+            name: '.name',
+            symbol: '.symbol',
+            number: '.number parseInt',
+            category: '[data-category]',
+            weight: function( itemElem ) {
+                var weight = $( itemElem ).find('.weight').text();
+                return parseFloat( weight.replace( /[\(\)]/g, '') );
+            }
+        }
+    });
+
+    // filter functions
+    var filterFns = {
+        // show if number is greater than 50
+        numberGreaterThan50: function() {
+            var number = $(this).find('.number').text();
+            return parseInt( number, 10 ) > 50;
+        },
+        // show if name ends with -ium
+        ium: function() {
+            var name = $(this).find('.name').text();
+            return name.match( /ium$/ );
+        }
+    };
+
+    // bind filter button click
+    $('#filters').on( 'click', 'button', function() {
+        var filterValue = $( this ).attr('data-filter');
+        // use filterFn if matches value
+        filterValue = filterFns[ filterValue ] || filterValue;
+        $grid.isotope({ filter: filterValue });
+    });
+
+    // change is-checked class on buttons
+    $('.button-group').each( function( i, buttonGroup ) {
+        var $buttonGroup = $( buttonGroup );
+        $buttonGroup.on( 'click', 'button', function() {
+            $buttonGroup.find('.active').removeClass('active');
+            $( this ).addClass('active');
+        });
+    });
+
+
+
+    const main = document.querySelector(".main");
+    const sidebar = document.querySelector(".sidebar");
+    const _backdrop = document.querySelector("._backdrop");
+    const sidebarOpen = document.querySelector(".sidebarOpen");
+
+    sidebarOpen.addEventListener("click",function () {
+        this.classList.toggle("click");
+        sidebar.classList.add("open");
+        _backdrop.classList.add("modal-backdrop")
+        _backdrop.classList.add("show")
+    });
+
+    _backdrop.addEventListener('click',function () {
+        sidebar.classList.remove("open");
+        _backdrop.classList.remove("modal-backdrop");
+        _backdrop.classList.remove("show");
+        // menu.classList.toggle("click");
+        sidebarOpen.classList.remove("click");
+    });
+
+    let ab = document.getElementById("ab");
+    if(localStorage.getItem('data-theme') == 'dark'){
+        document.querySelector('body').classList.remove('main__body');
+        console.log("dark")
+        ab.checked = false
+    }else{
+        document.querySelector('body').classList.add('main__body');
+        console.log("light")
+        ab.checked = true
+    }
+
+    const mode = document.querySelector('.mode');
+    mode.addEventListener('change',()=>{
+        if(localStorage.getItem('data-theme') == 'dark'){
+            localStorage.setItem("data-theme", "light");
+            document.querySelector('body').classList.add('main__body');
+            console.log("dark-gyi-per")
+        }else{
+            localStorage.setItem("data-theme", "dark");
+            document.querySelector('body').classList.remove('main__body');
+            console.log("light-gyi-per")
+        }
+    });
+
+
+</script>
+
+
+</body>
+</html>

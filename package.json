@@ -1,0 +1,20 @@
+{
+  "name": "rubbit",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.15.3",
+    "bootstrap": "^5.0.2",
+    "isotope-layout": "^3.0.6",
+    "jquery": "^3.6.0",
+    "pagepiling-js-version-kostyast": "^2.0.5",
+    "scrollreveal": "^4.0.9"
+  }
+}
