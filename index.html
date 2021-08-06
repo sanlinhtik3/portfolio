@@ -24,7 +24,9 @@
     <meta property="twitter:title" content="San Lin Htike">
     <meta property="twitter:description" content="မင်္ဂလာပါ။ ကျွန်တော့်အမည်ဆန်းလင်းထိုက်ပါ။ MMSIT မှာ Web Developer ပညာရပ်ကိုလေ့လာသင်ယူနေတဲ့ သင်တန်းသားတစ်ဦးဖြစ်ပါတယ်။ ‌ကျေးဇူးတင်ပါတယ်။">
     <meta property="twitter:image" content="https://kohtike.mmsit.store/assets/img/san-lin-htike.png">
+    <meta name="theme-color" id="theme" content="#000000">
 
+    <link rel="icon" href="assets/img/san-lin-htike.png">
     <link rel="stylesheet" class="alternate-style" title="light" href="assets/themes/dark.css" disabled>
     <link rel="stylesheet" class="alternate-style" title="dark" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.min.css">
@@ -836,14 +838,16 @@
 
     if(localStorage.getItem('data-theme') == 'dark'){
         document.querySelector('body').classList.remove('main__body');
-        console.log("dark")
+        document.getElementById("theme").setAttribute("content","#000000e0");
+        // console.log("dark")
         ab.checked = false
 
         // links[0].removeAttribute("disabled");
         // links[1].setAttribute("disabled","true");
     }else{
         document.querySelector('body').classList.add('main__body');
-        console.log("light")
+        document.getElementById("theme").setAttribute("content","#ffffff");
+        // console.log("light")
         ab.checked = true
 
         // links[0].setAttribute("disabled","true");
@@ -855,6 +859,7 @@
         if(localStorage.getItem('data-theme') == 'dark'){
             localStorage.setItem("data-theme", "light");
             document.querySelector('body').classList.add('main__body');
+            document.getElementById("theme").setAttribute("content","#ffffff");
 
             console.log("dark-gyi-per")
             // links[0].setAttribute("disabled","true");
@@ -863,12 +868,18 @@
         }else{
             localStorage.setItem("data-theme", "dark");
             document.querySelector('body').classList.remove('main__body');
+            document.getElementById("theme").setAttribute("content","#000000e0");
 
             console.log("light-gyi-per")
             // links[0].removeAttribute("disabled");
             // links[1].setAttribute("disabled","true");
         }
     });
+
+    let theme = document.getElementById("theme").getAttribute("content");
+    let darkTheme = document.getElementById("theme").setAttribute("content","#ffffff");
+    console.log(darkTheme)
+    console.log(theme)
 
 
 
