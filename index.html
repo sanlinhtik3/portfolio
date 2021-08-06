@@ -26,11 +26,12 @@
     <meta property="twitter:image" content="https://kohtike.mmsit.store/assets/img/san-lin-htike.png">
     <meta name="theme-color" id="theme" content="#000000">
 
-    <link rel="icon" href="assets/img/san-lin-htike.png">
+    <link rel="icon" href="assets/img/slh.jpg">
     <link rel="stylesheet" class="alternate-style" title="light" href="assets/themes/dark.css" disabled>
     <link rel="stylesheet" class="alternate-style" title="dark" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.min.css">
     <link rel="stylesheet" href="node_modules/pagepiling-js-version-kostyast/dist/jquery.pagepiling.min.css">
+    <link rel="stylesheet" href="node_modules/swiper/swiper-bundle.min.css">
     <link rel="stylesheet" href="assets/css/mode.css">
     <style>
         @font-face {
@@ -43,9 +44,105 @@
             font-weight: auto;
             src: url("assets/fonts/montserrat/Montserrat-Regular.ttf");
         }
+        .loader,
+        .loader:before,
+        .loader:after {
+            border-radius: 50%;
+        }
+        .loader {
+            color: #ffffff;
+            font-size: 11px;
+            text-indent: -99999em;
+            margin: 55px auto;
+            position: relative;
+            width: 10em;
+            height: 10em;
+            box-shadow: inset 0 0 0 1em;
+            -webkit-transform: translateZ(0);
+            -ms-transform: translateZ(0);
+            transform: translateZ(0);
+        }
+        .loader:before,
+        .loader:after {
+            position: absolute;
+            content: '';
+        }
+        .loader:before {
+            width: 5.2em;
+            height: 10.2em;
+            background: #212529;
+            border-radius: 10.2em 0 0 10.2em;
+            top: -0.1em;
+            left: -0.1em;
+            -webkit-transform-origin: 5.1em 5.1em;
+            transform-origin: 5.1em 5.1em;
+            -webkit-animation: load2 2s infinite ease 1.5s;
+            animation: load2 2s infinite ease 1.5s;
+        }
+        .loader:after {
+            width: 5.2em;
+            height: 10.2em;
+            background: #212529;
+            border-radius: 0 10.2em 10.2em 0;
+            top: -0.1em;
+            left: 4.9em;
+            -webkit-transform-origin: 0.1em 5.1em;
+            transform-origin: 0.1em 5.1em;
+            -webkit-animation: load2 2s infinite ease;
+            animation: load2 2s infinite ease;
+        }
+        @-webkit-keyframes load2 {
+            0% {
+                -webkit-transform: rotate(0deg);
+                transform: rotate(0deg);
+            }
+            100% {
+                -webkit-transform: rotate(360deg);
+                transform: rotate(360deg);
+            }
+        }
+        @keyframes load2 {
+            0% {
+                -webkit-transform: rotate(0deg);
+                transform: rotate(0deg);
+            }
+            100% {
+                -webkit-transform: rotate(360deg);
+                transform: rotate(360deg);
+            }
+        }
+        .loading{
+            position: fixed;
+            top: 0;
+            left: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 100vh;
+            z-index: 2000;
+            background-color: #212529;
+            animation: 1s fadeOut ease-out;
+        }
+        @-webkit-keyframes fadeOut {
+            0% { opacity: 1;}
+            99% { opacity: 0.01;width: 100%; height: 100%;}
+            100% { opacity: 0;width: 0; height: 0;}
+        }
+        @keyframes fadeOut {
+            0% { opacity: 1;}
+            99% { opacity: 0.01;width: 100%; height: 100%;}
+            100% { opacity: 0;width: 0; height: 0;}
+        }
+
     </style>
 </head>
 <body class="text-white">
+<div class="loading">
+    <div class="">
+        <div class="loader">Loading...</div>
+    </div>
+</div>
 
 <nav class="__nav shadow-sm p-3 d-flex position-fixed start-0 top-0 w-100 justify-content-between align-items-center d-block d-xl-none">
     <div class=" fw-bold">
@@ -62,7 +159,7 @@
     <div class="position-relative">
         <div class="hl-top">
             <div class="hl-logo text-center">
-                <img src="assets/img/san-lin-htike.png" class="w-50 border-light border-2 border rounded-circle" alt="">
+                <img src="assets/img/slh.jpg" class="w-50 border-light border-2 border rounded-circle" alt="">
             </div>
             <div class="text-center mt-3">
                 <h6 class="fw-bold text-uppercase __fw-bold" style="letter-spacing: 5px;">San Lin Htike</h6>
@@ -124,7 +221,21 @@
                     </div>
                     <div class="col-11 col-lg-6">
                         <div class="headline">
-                            <img src="assets/img/san-lin-htike.png" class="img-fluid rounded-circle border border-5 border__success" alt="">
+
+                            <!-- Swiper -->
+                            <div class="swiper-container mySwiper">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <img src="assets/img/slh.jpg" class="img-fluid rounded-circle border border-5 border__success" alt="">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="assets/img/san-lin-htike.png" class="img-fluid rounded-circle border border-5 border__success" alt="">
+                                    </div>
+                                </div>
+                                <!--<div class="swiper-button-next"></div>-->
+                                <!--<div class="swiper-button-prev"></div>-->
+                                <!--<div class="swiper-pagination"></div>-->
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -688,6 +799,7 @@
 <script src="node_modules/pagepiling-js-version-kostyast/dist/jquery.pagepiling.min.js"></script>
 <script src="node_modules/scrollreveal/dist/scrollreveal.min.js"></script>
 <script src="node_modules/isotope-layout/dist/isotope.pkgd.min.js"></script>
+<script src="node_modules/swiper/swiper-bundle.js"></script>
 
 
 <script>
@@ -876,10 +988,31 @@
         }
     });
 
-    let theme = document.getElementById("theme").getAttribute("content");
-    let darkTheme = document.getElementById("theme").setAttribute("content","#ffffff");
-    console.log(darkTheme)
-    console.log(theme)
+
+
+
+    window.addEventListener("load",function (){
+        document.querySelector(".loading").style.display = 'none';
+    })
+
+    var swiper = new Swiper(".mySwiper", {
+        spaceBetween: 30,
+        centeredSlides: true,
+        effect: 'cube',
+        autoplay: {
+            delay: 3500,
+            disableOnInteraction: false,
+        },
+        // pagination: {
+        //     el: ".swiper-pagination",
+        //     clickable: true,
+        // },
+        // navigation: {
+        //     nextEl: ".swiper-button-next",
+        //     prevEl: ".swiper-button-prev",
+        // },
+    });
+
 
 
 

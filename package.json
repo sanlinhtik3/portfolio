@@ -15,6 +15,7 @@
     "isotope-layout": "^3.0.6",
     "jquery": "^3.6.0",
     "pagepiling-js-version-kostyast": "^2.0.5",
-    "scrollreveal": "^4.0.9"
+    "scrollreveal": "^4.0.9",
+    "swiper": "^6.8.1"
   }
 }
