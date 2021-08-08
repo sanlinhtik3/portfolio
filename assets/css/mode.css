@@ -2,7 +2,7 @@
 /*    --soft-success: #ff304f;*/
 /*}*/
 html {
-    --soft-success: #ff304f;
+    --soft-success: #007bff;
 }
 /*html[data-theme='pink'] {*/
 /*    --soft-success: #ff304f;*/
@@ -341,7 +341,7 @@ html {
 }
 .main__body .sidebar{
     z-index: 3000;
-    box-shadow: 4px 4px 10px -5px #000000;
+    /*box-shadow: 4px 4px 10px -5px #000000;*/
     background-color: var(--bs-light) !important;
 }
 .main__body #myMenu a{
@@ -410,6 +410,9 @@ html {
         display: none;
     }
     /*mode setting*/
+    .swiper-slide img {
+        width: 70% !important;
+    }
 }
 
 @media screen and (max-width: 576px) {
@@ -429,6 +432,9 @@ html {
         left: -70px;
         width: 425px;
         height: 350px;
+    }
+    .swiper-slide img {
+        width: 70% !important;
     }
 }
 
@@ -488,5 +494,5 @@ html {
 }
 .swiper-slide img {
     display: block!important;
-    width: 100% !important;
+    width: 60%;
 }

@@ -155,7 +155,7 @@
     </div>
 </nav>
 
-<header class="header-left sidebar">
+<header class="header-left sidebar shadow">
     <div class="position-relative">
         <div class="hl-top">
             <div class="hl-logo text-center">
@@ -226,10 +226,10 @@
                             <div class="swiper-container mySwiper">
                                 <div class="swiper-wrapper">
                                     <div class="swiper-slide">
-                                        <img src="assets/img/slh.jpg" class="img-fluid rounded-circle border border-5 border__success" alt="">
+                                        <img src="assets/img/slh.jpg" class="rounded-circle border border__success" alt="" style="border-width: 15px!important;">
                                     </div>
                                     <div class="swiper-slide">
-                                        <img src="assets/img/san-lin-htike.png" class="img-fluid rounded-circle border border-5 border__success" alt="">
+                                        <img src="assets/img/san-lin-htike.png" class="rounded-circle border border__success" alt="" style="border-width: 15px!important;">
                                     </div>
                                 </div>
                                 <!--<div class="swiper-button-next"></div>-->
@@ -995,10 +995,10 @@
         document.querySelector(".loading").style.display = 'none';
     })
 
-    var swiper = new Swiper(".mySwiper", {
+    let swiper = new Swiper(".mySwiper", {
         spaceBetween: 30,
         centeredSlides: true,
-        effect: 'cube',
+        effect: 'fade',
         autoplay: {
             delay: 3500,
             disableOnInteraction: false,
