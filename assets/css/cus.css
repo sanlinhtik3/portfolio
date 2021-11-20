@@ -1,0 +1,24 @@
+.item-body{
+    display: none;
+    animation: 0.5s;
+    animation: growDown 0.5s;
+}
+.show{
+    animation: growDown 0.5s;
+}
+.item-body.show{
+    display: block;
+    animation: 0.5s;
+}
+
+@keyframes growDown {
+    0% {
+        transform: scaleY(0)
+    }
+    80% {
+        transform: scaleY(1.1)
+    }
+    100% {
+        transform: scaleY(1)
+    }
+}
